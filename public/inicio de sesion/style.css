@@ -1,0 +1,46 @@
+body {
+    font-family: sans-serif;
+    background: url('img/luna.png') no-repeat fixed;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+h1{
+    font-size: 46px;
+}
+
+.container {
+    background: white;
+    padding: 3rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #000;
+    text-align: center;
+}
+
+input {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+.botones button {
+    margin: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    
+}
+
+#mensaje {
+    margin-top: 15px;
+    color: red;
+    font-weight: bold;
+}
+.bt-registrase{
+    text-decoration: none;
+}

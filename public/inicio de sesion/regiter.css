@@ -1,0 +1,85 @@
+body {
+    font-family: sans-serif;
+    background: url('../img/luna.png') no-repeat fixed;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    text-decoration: none;
+}
+h1{
+    font-size: 46px;
+    transition: border-bottom-color 2s ease;
+    font-family: monospace;
+    color: rgb(212, 212, 210);
+    text-shadow: 0 0 10px lightblue;
+}
+.container {
+    background: white;
+    padding: 3rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #000;
+    text-align: center;
+    background-color: rgba(45, 44, 44, 0.695); /* Fondo negro con 80% de opacidad */
+    padding: 3rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #000;
+    text-align: center;
+}
+input {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+}
+.botones button {
+    margin: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+#mensaje {
+    margin-top: 15px;
+    color: rgba(255, 0, 0, 0.83);
+    font-weight: bold;
+    font-size: 20px;
+}
+.bt-registrase{
+    text-decoration: none;
+    margin-top: 10px;
+    display: block; 
+    text-align: center;
+    font-family: sans-serif ;
+    color: #ffffffa1;
+    text-shadow: 0 0 10px lightblue;
+}
+.info-de-usuario{
+    border: none;
+    border-bottom: 2px solid #210202; /* Borde inferior visible */
+    padding-bottom: 5px;
+    background-color: transparent;
+    color: #ffffffe3;
+    cursor: pointer;
+    outline: none;
+    transition: border-bottom-color 2s ease;
+}
+
+.info-de-usuario:focus {
+    border-bottom-color: #000000;
+}
+
+.campo-bt{
+    background-color: rgba(29, 78, 100, 0.338); /* Fondo negro con 80% de opacidad */
+    border-radius: 5px;
+    box-shadow: 0 0 5px #ffffff48;
+}
+.bt-registrase:hover {
+    color: #000000; /* Cambiar el color al pasar por encima */
+}
+#email::placeholder,
+#password::placeholder {
+    color: #ffffffbe;
+}
