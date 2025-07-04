@@ -4,20 +4,9 @@ body {
     padding: 0;
     min-height: 100vh;
     background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
-
-    color: white;
+    --color-back:ellipse at bottom, #1b2735 0%, #090a0f 100%;
     font-family: 'Arial', sans-serif;
     position: relative;
-}
-
-/* Imagen de la luna */
-.luna {
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    width: 200px;
-    z-index: 1;
-    opacity: 0.8;
 }
 
 /* HEADER y NAVBAR */
@@ -35,7 +24,6 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 20px;
     box-sizing: border-box;
 }
 
@@ -68,12 +56,51 @@ header {
     text-align: center;
     border: 1px solid transparent;
 }
+.menu-toggle {
+    display: none;
+    background-color: transparent;
+    border: none;
+    font-size: 25px;
+    color: white;
+    cursor: pointer;
+}
+
+/* Media Query para celulares */
+@media (max-width: 768px) {
+    .barra-de-nav-list {
+        display: none;
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.8);
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .barra-de-nav-list.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .item-nav {
+        margin: 10px 0;
+        text-align: center;
+    }
+}
 /*secsion de prductos*/
 
-.section-producto {
-    height: 950px;
-    margin: 2px 0;
+.seccion-producto {
+    min-height: 100vh; /* Ocupa el 100% de la altura de la pantalla */
+    margin-bottom: 100vh; /* Separa cada sección hacia abajo */
     background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .contenedor-principal {
@@ -82,7 +109,7 @@ header {
     margin: auto;
     gap: 10px;
     padding: 60px;
-    background-color: #f2f2f2;
+    background-color:var(--color-back);
     color: black;
 }
 
@@ -97,6 +124,7 @@ header {
     padding: 15px;
     border-radius: 10px;
     max-width: 400px;
+    background-color: #f2f2f2;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
@@ -115,4 +143,70 @@ header {
     max-width: 400px;
     margin-top: 15px;
     border-radius: 10px;
+}
+/* Versión 2 - Invertida */
+.contenedor-invertido {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 10px;
+    padding: 60px;
+    background-color: #f2f2f2;
+    color: black;
+}
+
+/* Versión 3 - Info - Producto - Precio */
+.contenedor-triple {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 60px;
+    background-color: var(--color-back);
+    color: black;
+    height: 500px;
+}
+
+.contenido-central {
+    background-color: white;
+    padding: 20px;
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.box-info, .box-precio {
+    background-color: white;
+    padding: 20px;
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+/* Versión 4 - Producto arriba, info y precio abajo */
+.contenedor-columnas {
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 60px;
+    background-color: var(--color-back);
+    color: black;
+}
+
+.fila-inferior {
+    display: flex;
+    gap: 20px;
+}
+
+.fila-inferior .box-info,
+.fila-inferior .box-precio {
+    width: 250px;
+}
+.contenedor-principal,
+.contenedor-invertido,
+.contenedor-columnas,
+.contenedor-triple {
+    margin-bottom: 120px;
 }

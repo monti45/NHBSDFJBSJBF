@@ -7,18 +7,29 @@
     <link rel="stylesheet" href="inicio.css">
 </head>
 <body>
-    <header>
-        <nav class="header-nav">
-            <a href="inicio.html" class="logo"><img src="../public/img/logo-transparent.png" alt="logo"></a>
-            <ul class="barra-de-nav-list">
-                <li class="item-nav"><a href="inicio.html">Inicio</a></li>
-                <li class="item-nav"><a href="productos.html">Producto</a></li>
-                <li class="item-nav"><a href="redes.html">Redes</a></li>
-                <li class="item-nav"><a href="../public/inicio de sesion/login.html">Inicio de sesión</a></li>
-            </ul>
-        </nav>
-    </header>
+<header>
+    <nav class="header-nav">
+        <a href="inicio.html" class="logo">
+            <img src="../public/img/logo-transparent.png" alt="logo">
+        </a>
+        <!-- Botón de menú para móviles -->
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+        <ul class="barra-de-nav-list">
+            <li class="item-nav"><a href="../public/inicio de sesion/login.html">Inicio de sesión</a></li>
+            <li class="item-nav"><a href="inicio.html">Inicio</a></li>
+            <li class="item-nav"><a href="productos.html">Producto</a></li>
+            <li class="item-nav"><a href="redes.html">Redes</a></li>
+        </ul>
+    </nav>
+</header>
+<script>
+    function toggleMenu() {
+        const navList = document.querySelector('.barra-de-nav-list');
+        navList.classList.toggle('active');
+    }
+</script>
     <main>
+<!-- Versión 1 - Invertida -->
         <div class="contenedor-principal">
     <div class="contenedor-izquierdo">
         <div class="info-producto">
@@ -36,14 +47,60 @@
         <img src="ruta/de/tu/imagen.jpg" alt="Imagen del producto" class="img-producto">
     </div>
 </div>
+<!-- Versión 2 - Invertida -->
 
-        <div class="section-producto"></div>
-        <div class="section-producto"></div>
-        <div class="section-producto"></div>
-        <div class="section-producto"></div>
-        <div class="section-producto"></div>
-        <div class="section-producto"></div>
-        <div class="section-producto"></div>
+<div class="contenedor-columnas">
+    <div class="contenido-central">
+        <h1>Mi Producto</h1>
+        <p>Imagen arriba, info y precio abajo.</p>
+        <img src="ruta/de/tu/imagen.jpg" alt="Producto" class="img-producto">
+    </div>
+    <div class="fila-inferior">
+        <div class="info-producto box-info">
+            <h3>Info</h3>
+            <p>Diseñado para durar.</p>
+        </div>
+        <div class="precio-producto box-precio">
+            <h3>Precio</h3>
+            <p>$4.999</p>
+        </div>
+    </div>
+</div>
+<!-- Versión 3 - Info - Producto - Precio -->
+<div class="contenedor-principal">
+    <div class="contenedor-izquierdo">
+        <div class="info-producto">
+            <h3>Info de Producto</h3>
+            <p>Este producto está hecho con materiales de alta calidad y diseñado para durar.</p>
+        </div>
+        <div class="precio-producto">
+            <h3>Precio de Producto</h3>
+            <p>$4.999 ARS</p>
+        </div>
+    </div>
+    <div class="contenedor-derecho">
+        <h1>Mi Producto</h1>
+        <p>Este es el producto destacado de nuestra tienda. Ofrece rendimiento y calidad garantizada.</p>
+        <img src="ruta/de/tu/imagen.jpg" alt="Imagen del producto" class="img-producto">
+    </div>
+</div>
+<!-- Versión 4 - Producto arriba, info y precio abajo -->
+<div class="contenedor-triple">
+    <div class="info-producto box-info">
+        <h3>Info de Producto</h3>
+        <p>Fabricado con calidad superior.</p>
+    </div>
+    <div class="contenido-central">
+        <h1>Mi Producto</h1>
+        <p>Info en un lado, precio en el otro.</p>
+        <img src="ruta/de/tu/imagen.jpg" alt="Producto" class="img-producto">
+    </div>
+    <div class="precio-producto box-precio">
+        <h3>Precio</h3>
+        <p>$4.999</p>
+    </div>
+</div>
     </main>
+    <footer></footer>
 </body>
 </html>
