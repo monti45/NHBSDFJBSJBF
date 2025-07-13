@@ -22,14 +22,8 @@
         </ul>
     </nav>
 </header>
-<script>
-    function toggleMenu() {
-        const navList = document.querySelector('.barra-de-nav-list');
-        navList.classList.toggle('active');
-    }
-</script>
     <main>
-    <!-- Versión 1 -->
+    <!--plantilla de presentación de pagiana wed(proeduntos) -->
 <div class="conteiner-tarjeta">
     <div class="tarjeta">
         <p class="subtitulo">Descubre los últimos modelos de smartphones</p>
@@ -41,7 +35,7 @@
         </div>
     </div>
 </div>
-<!-- Versión 2 -->
+<!-- Versión 1 -->
 <div class="contenedor-principal">
     <div class="contenedor-izquierdo">
         <div class="info-producto">
@@ -50,7 +44,7 @@
                 Pantalla Super AMOLED de 6.5" FHD+ a 120Hz.<br>
                 Procesador Exynos 1280 con 6GB de RAM y 128GB de almacenamiento.<br>
                 Triple cámara trasera: 50 MP principal + 8 MP ultra gran angular + 2 MP.<br>
-                Batería de 5000 mAh con carga rápida de 25W.
+                Batería de 5000 mAh.
             </p>
         </div>
         <div class="precio-producto">
@@ -66,18 +60,19 @@
 
 <div class="contenedor-columnas">
     <div class="contenido-central">
-        <h1>Mi Producto</h1>
-        <p>Imagen arriba, info y precio abajo.</p>
-        <img src="ruta/de/tu/imagen.jpg" alt="Producto" class="img-producto">
+        <img src="img/Motorola G84 5G.jpeg" alt="Producto" class="img-producto">
     </div>
     <div class="fila-inferior">
         <div class="info-producto box-info">
-            <h3>Info</h3>
-            <p>Diseñado para durar.</p>
+            <h3>Motorola G84 5G</h3>
+            <p>Pantalla pOLED de 6.5” FHD+ a 120Hz<br>
+            Snapdragon 695, 8GB RAM, 256GB almacenamiento<br>
+            Cámara principal de 50MP con OIS<br>
+            Batería de 5000 mAh con carga rápida de 33W</p>
         </div>
         <div class="precio-producto box-precio">
             <h3>Precio</h3>
-            <p>$4.999</p>
+            <p id="presio-producto-version-2">$450.000 ARS</p>
         </div>
     </div>
 </div>
@@ -99,5 +94,6 @@
 </div>
     </main>
     <footer></footer>
+    <script src="script.js"></script>
 </body>
 </html>

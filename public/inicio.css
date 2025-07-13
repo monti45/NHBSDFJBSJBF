@@ -95,7 +95,7 @@ header {
 /*version 1*/
 .conteiner-tarjeta{
 margin-top: 150px;
-height: 626px;
+height: 726px;
 background-image: url();
 }
 .tarjeta {
@@ -103,7 +103,7 @@ background-image: url();
     padding: 30px 25px;
     border: 1px solid black;
     text-align: center;
-    max-width: 300px;
+    max-width: 350px;
     margin: 50px auto;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
@@ -173,13 +173,13 @@ hr {
     height: 770px;
     margin: auto;
     gap: 10px;
-    padding: 60px;
+    padding: 30px;
     background-color:var(--color-back);
     color: black;
 }
 
 .contenedor-izquierdo {
-    width: 400px;
+    width: 200px;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -188,7 +188,7 @@ hr {
 .info-producto, .precio-producto {
     padding: 15px;
     border-radius: 10px;
-    max-width: 400px;
+    max-width: 170px;
     background-color: #f2f2f2;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
@@ -205,7 +205,7 @@ hr {
 
 .img-producto{
     width: 100%;
-    max-width: 250px;
+    max-width: 270px;
     height: auto;
     display: block;
     margin: 0 auto;
